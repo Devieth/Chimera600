@@ -184,12 +184,12 @@ These commands fix various problems with Halo. Some fixes, such as the magnetism
 This is Chimera’s flagship feature. It smoothes out object movement at higher framerates, increasing the game’s fluidity.
 
 * `chimera_widescreen_scope_fix [true/false]` - Enhance an existing widescreen fix by also fixing the scope mask if it's not fixed.
-* `chimer_interpolate_predict [0/1/2/3]` - Get or set whether the next tick should be predicted when interpolating. This will prevent objects from appearing as if they are one tick behind, but sudden object movement may cause jitteriness.
+* `chimera_interpolate_predict [0/1/2/3]` - Get or set whether the next tick should be predicted when interpolating. This will prevent objects from appearing as if they are one tick behind, but sudden object movement may cause jitteriness.
 	* `0` Off
 	*	`1` On
 	*	`2` On (Do not intepolate the first person camera.)
 	*	`3` On (Only interpolate the first person camera while in a vehicle.)
-* `chimer_interpolate [off/low/medium/high/ultra]` - Get or set the interpolation level. Interpolation smoothes out object movement between ticks, providing a substantial visual improvement. Higher levels incur greater CPU usage and may impact framerate on slower CPUs.
+* `chimera_interpolate [off/low/medium/high/ultra]` - Get or set the interpolation level. Interpolation smoothes out object movement between ticks, providing a substantial visual improvement. Higher levels incur greater CPU usage and may impact framerate on slower CPUs.
 
 Here is what each level of interpolation does:
 
