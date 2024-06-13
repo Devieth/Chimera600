@@ -1,7 +1,11 @@
 <h1 align="center">Chimera</h1>
 <p align="center">
-    A feature-rich mod for Halo Custom Edition
+    A feature-rich mod for Halo Custom Edition 
 </p>
+
+# NOTICE
+This is an old version of Chimera and is no longer supported by me or the original developer.
+If you want the latest version, it is still being worked on by the orignal developer here: https://github.com/SnowyMouse/chimera
 
 # Introduction
 
