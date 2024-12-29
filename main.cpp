@@ -9,6 +9,8 @@ extern "C" BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvRe
     static bool dedicated = reinterpret_cast<const char *>(sig_scan_s(dsig)) != NULL;
     static bool loaded = false;
 
+	//MessageBox(NULL, "Hello World!", "My Message Box", MB_OK);
+
     if(fdwReason == DLL_PROCESS_ATTACH && !loaded) {
         loaded = true;
         if(dedicated) {
