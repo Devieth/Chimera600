@@ -21,7 +21,7 @@ static int lua_console_is_open(lua_State *state) noexcept {
 
 static int lua_console_out(lua_State *state) noexcept {
     int args = lua_gettop(state);
-    if(args == 1 || args == 4 || args == 5) {
+    if(args == 1 || args == 4) {
         const char *string;
         if(lua_isboolean(state,1))
             string = lua_toboolean(state,1) ? "true" : "false";
@@ -31,14 +31,9 @@ static int lua_console_out(lua_State *state) noexcept {
             string = luaL_checkstring(state,1);
         ColorARGB argb;
         if(args >= 4) {
-            int offset = 0;
-            if(args >= 5) {
-                argb.alpha = luaL_checknumber(state,2);
-                offset = 1;
-            }
-            argb.red = luaL_checknumber(state,offset+2);
-            argb.green = luaL_checknumber(state,offset+3);
-            argb.blue = luaL_checknumber(state,offset+4);
+            argb.red = luaL_checknumber(state,2);
+            argb.green = luaL_checknumber(state,3);
+            argb.blue = luaL_checknumber(state,4);
         }
         console_out(string, argb);
         return 0;

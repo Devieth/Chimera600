@@ -35,7 +35,7 @@ void chat_out(const char *message, uint32_t channel) noexcept {
         :
         : "r" (channel), "r" (unicode), "r" (unicode2), "r" (chat_out)
     );
-    
+
     delete[] unicode;
     delete[] unicode2;
 }
